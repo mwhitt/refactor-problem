@@ -23,6 +23,7 @@
 		5771C7061FA77029003F53B9 /* TrialEpisodeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771C7051FA77029003F53B9 /* TrialEpisodeViewModelSpec.swift */; };
 		5771C7081FA7708C003F53B9 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5771C7001FA7700F003F53B9 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5771C7091FA7708C003F53B9 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5771C7011FA7700F003F53B9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C91B54391FA79276000E2F65 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B54381FA79276000E2F65 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		5771C7011FA7700F003F53B9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		5771C7041FA77028003F53B9 /* RefactorExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RefactorExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		5771C7051FA77029003F53B9 /* TrialEpisodeViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialEpisodeViewModelSpec.swift; sourceTree = "<group>"; };
+		C91B54381FA79276000E2F65 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				5771C6F91FA76ECC003F53B9 /* ServiceError.swift */,
 				5771C6FB1FA76EE0003F53B9 /* MyAppDelegate.swift */,
 				5771C6FD1FA76EF2003F53B9 /* AppContext.swift */,
+				C91B54381FA79276000E2F65 /* APIManager.swift */,
 			);
 			path = RefactorExample;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				5771C6FA1FA76ECC003F53B9 /* ServiceError.swift in Sources */,
 				5771C6FE1FA76EF2003F53B9 /* AppContext.swift in Sources */,
 				5771C6D61FA76BD7003F53B9 /* ViewController.swift in Sources */,
+				C91B54391FA79276000E2F65 /* APIManager.swift in Sources */,
 				5771C6D41FA76BD7003F53B9 /* AppDelegate.swift in Sources */,
 				5771C6FC1FA76EE0003F53B9 /* MyAppDelegate.swift in Sources */,
 				5771C6F61FA76EA2003F53B9 /* TrialEpisodeViewModelDelegate.swift in Sources */,

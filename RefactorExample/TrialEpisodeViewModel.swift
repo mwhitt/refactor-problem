@@ -6,16 +6,14 @@ class TrialEpisodeViewModel {
     
     weak var delegate: TrialEpisodeViewModelDelegate?
     
-    func loadModel(_ videoGuid: String) {
+    func loadModel(_ videoGuid: String, appContext: ShareableContext) {
         self.videoGuid = videoGuid
         
-        Video.videoFor(guid: videoGuid, appContext: MyAppDelegate.sharedAppContext,
-                       onSuccess: { [weak self] video in
-                        self?.video = video
-                        self?.delegate?.didCompleteLoad(video)
-            },
-                       onFailure: { [weak self] error in
-                        self?.delegate?.didFailToLoad(error)
+        appContext.apiManager.getVideo(videoGuid, onSuccess: { [weak self] video in
+            self?.video = video
+            self?.delegate?.didCompleteLoad(video)
+        }, onFailure: { [weak self] error in
+            self?.delegate?.didFailToLoad(error)
         })
     }
 }
